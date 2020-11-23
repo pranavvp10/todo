@@ -1,0 +1,82 @@
+body{
+    min-height: 450px;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(#f73f,#372f);
+}
+
+.todo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    height: 500px;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: 0 7px 30px;
+    background-color: black;
+}
+
+.cover-image .cover-header{
+    background: url('https://images.unsplash.com/photo-1606009589462-ec3eecbea20a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    height: 190px;
+    background-position: 10% 20%;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.cover-header h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: azure;
+
+}
+
+.content{
+    padding: 10px 20px;
+    background-color: rgba(235, 200, 136, 0.967)
+}
+
+.content form{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 0 10px 0 5px;
+    border-bottom: 1px solid #8e979c;
+}
+.content .input-buttons a{
+    text-decoration: none;
+  }
+
+.content .input-buttons i {
+    margin-top: 5px;
+    font-size: 20px;
+    color: aquamarine;
+  }
+
+.content li {
+    user-select: none;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+.content ul.todos {
+    margin-left: 0;
+    padding: 0;
+    letter-spacing: none;
+    height: 220px;
+    overflow: auto;
+  }
+.marked{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
